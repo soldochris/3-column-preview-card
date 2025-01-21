@@ -96,15 +96,37 @@ body{
   & footer{
     text-align: center;
     font-size: 12px;
+    color: var(--Very-dark-cyan);
+    margin: 16px 0;
 
     & a{
       color: var(--Dark-cyan);
-      text-decoration: none;
+      text-decoration-color: var(--Bright-orange);
     }
 
     & a:hover{
       color: var(--Bright-orange);
       text-decoration: underline;
+    }
+  }
+}
+
+@media (width > 430px) {
+  body{
+
+    & main{
+      width: 820px;
+      display: flex;
+
+      & section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & button{
+          width: fit-content;
+        }
+      }
     }
   }
 }
