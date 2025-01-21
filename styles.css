@@ -14,9 +14,97 @@ body{
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  background-color: var(--Very-light-gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
 
-  & h2{
-    font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 700;
+  & main{
+    width: 320px;
+    color: var(--Transparent-white);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+
+    & section{
+      background-color: var(--Bright-orange);
+      padding: 32px 36px;
+
+      & img{
+        width: 50px;
+      }
+
+      & h2{
+        font-family: "Big Shoulders Display", sans-serif;
+        font-weight: 700;
+        color: var(--Very-light-gray);
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+
+      & p{
+        line-height: 1.7;
+      }
+
+      & button{
+        background-color: var(--Very-light-gray);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 25px;
+        color: var(--Bright-orange);
+        cursor: pointer;
+        margin: 12px 0;
+        border: solid 2px var(--Very-light-gray);
+      }
+
+      & button:hover{
+        background-color: transparent;
+        color: var(--Very-light-gray);
+      }
+    }
+
+    & section:nth-child(2){
+      background-color: var(--Dark-cyan);
+
+      & button{
+        color: var(--Dark-cyan);
+      }
+
+      & button:hover{
+        background-color: transparent;
+        color: var(--Very-light-gray);
+      }
+    }
+
+    & section:nth-child(3){
+      background-color: var(--Very-dark-cyan);
+
+      & button{
+        color: var(--Very-dark-cyan);
+      }
+
+      & button:hover{
+        background-color: transparent;
+        color: var(--Very-light-gray);
+      }
+    }
+  }
+
+  & footer{
+    text-align: center;
+    font-size: 12px;
+
+    & a{
+      color: var(--Dark-cyan);
+      text-decoration: none;
+    }
+
+    & a:hover{
+      color: var(--Bright-orange);
+      text-decoration: underline;
+    }
   }
 }
